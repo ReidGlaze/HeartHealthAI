@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Heart Health AI",
+    "slug": "heart-health-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.reidglaze.hearthealthai"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Heart Health AI to access your camera to analyze food for heart health assessment."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Heart Health AI to access your photos to analyze food for heart health assessment."
+        }
+      ]
+    ],
+    "newArchEnabled": true,
+    "jsEngine": "hermes"
+  }
+}

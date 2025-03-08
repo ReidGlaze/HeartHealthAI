@@ -1,0 +1,489 @@
+# HeartHealthAI App Documentation
+
+## Introduction
+
+HeartHealthAI is a comprehensive mobile application designed to help users monitor and improve their heart health through informed food choices. Available on both iOS and Android platforms, the app leverages artificial intelligence to analyze food, provide evidence-based heart health scoring, and deliver personalized recommendations.
+
+HeartHealthAI stands apart from typical nutrition apps by focusing specifically on cardiovascular health impacts of food, using a sophisticated scoring system developed in collaboration with medical experts. The app empowers users to make heart-healthy choices daily through an engaging, user-friendly interface and scientifically sound feedback.
+
+## Technical Specifications
+
+### Platform Support
+- iOS: iPhone devices running iOS 14.0 and above
+- Android: Devices running Android 8.0 (Oreo) and above
+
+### Development Framework
+- Built with Expo framework for cross-platform development
+- Expo SDK for access to native device features and simplified deployment
+- Expo EAS (Expo Application Services) for build and submission processes
+- Cross-platform development for consistent experience across devices
+- MagicMCP for UI component development and implementation
+- Modern architecture with clean separation of concerns
+
+### Backend Services
+- Supabase for database management and user authentication
+- Database tables configured through Supabase SQL editor
+- Secure storage of user health data and food records
+- Expo Push Notification tokens stored in Supabase
+
+### AI Integration
+- OpenAI GPT-4o-mini API for food image analysis and description
+- GPT-4o-mini for description refinement and combination
+- Focus on extracting heart-health relevant aspects from food images
+
+### Security
+- API keys and database connections stored securely in .env files
+- Encryption for all sensitive health information
+- Compliance with relevant privacy regulations
+
+### Subscription Model
+- Freemium approach with limited free access and premium paid features
+- Free Trial: Up to 10 food scans with complete heart health analysis
+- Premium Subscription:
+  - Monthly plan: $3.99 per month
+  - Annual plan: $9.99 per year (58% savings)
+- In-app purchase integration through Expo's IAP module
+- Subscription state tracking in Supabase database
+
+## Onboarding Flow
+
+The HeartHealthAI onboarding process is designed to be engaging while collecting essential information to personalize the user experience. All data collection prioritizes user privacy with clear opt-in choices. The app can function effectively with minimal personal information, with enhanced features available for users who choose to share more details.
+
+### 1. Welcome Screen
+- App introduction with brief explanation of HeartHealthAI's purpose
+- Compelling visuals showing the app's core functionality
+- Clear value proposition for heart health management
+- Privacy-first approach highlighted from the start
+
+### 2. Value Proposition
+- Detailed explanation of the data and feedback users will receive
+- Sample heart health scores and visualizations
+- Benefits of tracking food's impact on heart health
+- Transparency about what information is collected and why
+
+### 3. Health Information Collection
+- User age input (crucial for comparative analysis)
+- Basic metrics: Weight and height for BMI calculation (optional, with explanation of benefits)
+- Simple health indicators:
+  - Activity level (low, moderate, high)
+  - General diet type (omnivore, vegetarian, vegan, etc.)
+- Optional additional information (clearly marked as optional):
+  - Family history of heart disease (simple yes/no)
+  - General blood pressure range (normal, elevated, high - if known)
+  - General cholesterol level (normal, elevated, high - if known)
+- No request for specific medications or detailed medical history
+- Clear explanation of how each piece of information enhances personalization
+
+### 4. Health Assessment
+- Initial heart health evaluation based on provided information
+- Comparison with peers in similar demographic groups (using only shared data points)
+- Personalized heart health baseline establishment
+- Visual representation of current heart health status
+- Clear indication that assessment improves with more information but works with minimal data
+
+### 5. Educational Content
+- Informative slides about heart health factors beyond standard nutrition labels
+- Explanation of the heart health scoring system
+- Focus on key elements: healthy vs. unhealthy fats, sodium, fiber, etc.
+- Brief illustration of how food choices impact heart health
+
+### 6. Notification Setup
+- Integration with Expo Push Notifications API
+- Request for permission to send health reminders and tips
+- Secure storage of push notification tokens in Supabase
+- Token refresh handling for reliable delivery
+- Customization options for notification frequency and types
+- Clear explanation of notification benefits for maintaining healthy habits
+
+### 7. Account Creation
+- Streamlined account creation process
+- Google sign-in integration for quick setup
+- Email/password alternative option
+- Clear terms of service and privacy policy presentation
+
+### 8. Privacy Assurance
+- Prominent explanation of privacy-first approach
+- Detailed explanation of data security measures
+- Transparency about data usage and storage
+- User control options for editing or deleting personal information
+- Option to use app with minimal personal data
+- Clear explanation that sensitive health data is never shared with third parties
+- Compliance with health data protection standards
+
+### 9. App Rating Prompt
+- Encouragement to rate the app
+- Interactive 5-star rating interface
+- Option to provide additional feedback
+- Thank you message and final onboarding completion
+
+## Core Functionality
+
+### Food Image Analysis
+
+HeartHealthAI's primary feature allows users to analyze foods through their smartphone camera:
+
+1. **Image Capture**
+   - Integrated camera interface for taking food pictures
+   - Option to select existing images from gallery
+   - Multiple image support for complex meals
+
+2. **AI-Powered Description**
+   - OpenAI GPT-4 analysis of food images
+   - Automatic identification of ingredients and preparation methods
+   - Focus on heart-health relevant aspects such as:
+     - Visible fats and oils
+     - Preparation methods (fried, baked, grilled)
+     - Approximate portion sizes
+     - Visible salt content
+     - Processed vs. whole food indicators
+
+3. **Description Refinement**
+   - Editable text box displaying the AI-generated description
+   - User ability to add missing information or correct inaccuracies
+   - GPT-4 Mini processing to combine original and user-provided information
+   - Multiple refinement iterations supported for accuracy
+
+4. **Analysis Initiation**
+   - Prominent button to perform heart health analysis
+   - Clear indication of processing status
+   - Seamless transition to results screen
+
+### Heart Health Scoring
+
+The app implements the comprehensive heart health scoring system detailed in the heart_health_food_scoring_system.txt document:
+
+1. **Scoring Calculation**
+   - Analysis of food description against eight key factors:
+     - Unhealthy Fat Score (15%)
+     - Healthy Fat Score (10%)
+     - Sodium Content Score (10%)
+     - Fiber Content Score (15%)
+     - Nutrient Density Score (20%)
+     - Processing Level Score (10%)
+     - Sugar Content Score (10%)
+     - Additives Score (10%)
+   - Calculation of weighted average for overall Heart Health Score
+
+2. **Results Visualization**
+   - Overall score displayed prominently (1-10 scale)
+   - Color-coded indicators (red to green spectrum)
+   - Breakdown of individual subscores with explanations
+   - Comparison to heart-healthy alternatives
+   - Specific improvement recommendations
+
+3. **Interactive Feedback**
+   - Expandable sections for detailed information on each subscore
+   - Educational content on improving specific aspects
+   - Swipeable interface to explore different components
+   - Shareable results for healthcare providers or personal records
+
+### Health Tracking
+
+HeartHealthAI provides comprehensive tracking to monitor progress over time:
+
+1. **Calendar Interface**
+   - Monthly view of daily heart health scores
+   - Color-coded indicators for quick visual assessment
+   - Daily average calculations from all logged foods
+   - Trend analysis with weekly and monthly summaries
+
+2. **Food Logging**
+   - Option to save analyzed foods to daily record
+   - Automatic association with meal times (breakfast, lunch, dinner, snacks)
+   - Portion adjustments for accurate tracking
+   - Favorite foods list for quick re-logging
+
+3. **Progress Monitoring**
+   - Weekly and monthly heart health reports
+   - Visual graphs showing score improvements
+   - Achievement badges for positive trends
+   - Personalized goal setting and tracking
+
+## Database Structure and Backend
+
+### Supabase Configuration
+
+The following database tables are implemented in Supabase:
+
+1. **Users Table**
+   ```sql
+   CREATE TABLE users (
+     id UUID PRIMARY KEY REFERENCES auth.users,
+     email TEXT UNIQUE,
+     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+     name TEXT,
+     age INTEGER,
+     weight NUMERIC,
+     height NUMERIC,
+     family_history BOOLEAN,
+     activity_level TEXT,
+     general_bp_category TEXT,
+     general_cholesterol_category TEXT,
+     diet_type TEXT,
+     expo_push_token TEXT,
+     subscription_status TEXT DEFAULT 'free_trial',
+     remaining_free_scans INTEGER DEFAULT 10,
+     subscription_expiry TIMESTAMP WITH TIME ZONE,
+     privacy_settings JSONB
+   );
+   ```
+
+2. **Food Entries Table**
+   ```sql
+   CREATE TABLE food_entries (
+     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+     user_id UUID REFERENCES users(id),
+     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+     food_description TEXT,
+     user_additional_info TEXT,
+     combined_description TEXT,
+     image_url TEXT,
+     meal_type TEXT,
+     unhealthy_fat_score NUMERIC,
+     healthy_fat_score NUMERIC,
+     sodium_score NUMERIC,
+     fiber_score NUMERIC,
+     nutrient_density_score NUMERIC,
+     processing_level_score NUMERIC,
+     sugar_score NUMERIC,
+     additives_score NUMERIC,
+     overall_score NUMERIC,
+     is_logged BOOLEAN DEFAULT TRUE,
+     scan_charged BOOLEAN DEFAULT TRUE
+   );
+   ```
+
+3. **Daily Health Scores Table**
+   ```sql
+   CREATE TABLE daily_health_scores (
+     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+     user_id UUID REFERENCES users(id),
+     date DATE,
+     average_score NUMERIC,
+     entries_count INTEGER,
+     UNIQUE(user_id, date)
+   );
+   ```
+
+4. **Subscriptions Table**
+   ```sql
+   CREATE TABLE subscriptions (
+     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+     user_id UUID REFERENCES users(id),
+     subscription_type TEXT,
+     start_date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+     end_date TIMESTAMP WITH TIME ZONE,
+     is_active BOOLEAN DEFAULT TRUE,
+     auto_renew BOOLEAN DEFAULT TRUE,
+     receipt_data TEXT,
+     platform TEXT,
+     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+   );
+   ```
+
+### API Integration
+
+1. **OpenAI API Implementation**
+   - GPT-4 endpoint for food image analysis
+   - Structured prompting to focus on heart-health relevant aspects
+   - Response parsing for scoring input
+   - API key management through secure .env file
+
+2. **Supabase API Integration**
+   - Real-time data synchronization
+   - User authentication and session management
+   - Secure data retrieval and storage
+   - Optimized queries for performance
+
+3. **Expo Push Notifications**
+   - Expo Push API integration
+   - Notification token management
+   - Triggered notifications based on:
+     - Daily reminders for food logging
+     - Weekly health reports
+     - Subscription status updates
+     - New feature announcements
+
+4. **In-App Purchases**
+   - Expo IAP module integration 
+   - Receipt validation and storage
+   - Subscription status management
+   - Restore purchase functionality
+
+### Data Security Measures
+
+1. **Encryption**
+   - End-to-end encryption for sensitive health data
+   - Secure transmission protocols
+   - No plain-text storage of health information
+
+2. **Privacy Controls**
+   - User-controlled data sharing options
+   - Clear data retention policies
+   - Complete data deletion option
+   - Regular security audits
+
+## UI/UX Design
+
+### Design Philosophy
+
+HeartHealthAI's interface is designed to be engaging and intuitive, making heart health tracking a seamless part of daily life:
+
+1. **Color Scheme**
+   - Primary: Heart-inspired reds and vibrant greens
+   - Secondary: Clean whites and subtle blues
+   - Accent: Warm oranges for calls to action
+   - Score visualization: Green (excellent) to red (poor) spectrum
+
+2. **Typography**
+   - Primary font: Clean, highly readable sans-serif
+   - Emphasis on legibility at all sizes
+   - Clear hierarchy for information scanning
+   - Appropriate contrast for accessibility
+
+3. **Layout Principles**
+   - Minimalist approach with focused content
+   - Progressive disclosure of complex information
+   - Thumb-friendly navigation elements
+   - Consistent patterns across screens
+
+### Key Screens Implementation
+
+1. **Home Dashboard**
+   - Today's heart health score prominently displayed
+   - Quick-access camera button for food scanning
+   - Recent food entries with scores
+   - Calendar preview with health tracking
+   - Motivational tips and challenges
+
+2. **Food Analysis Screen**
+   - Camera viewfinder with guidance overlay
+   - Real-time processing indicators
+   - Editable description field with clear formatting
+   - Analysis button with prominent placement
+   - Sample images for reference
+
+3. **Results Screen**
+   - Overall score with visual impact
+   - Individual subscores in collapsible sections
+   - Educational tooltips for each component
+   - Actionable recommendations
+   - Options to save, share, or discard results
+
+4. **Calendar View**
+   - Monthly grid with color-coded days
+   - Daily score indicators
+   - Tap interaction for daily breakdown
+   - Weekly and monthly averages
+   - Trend visualization
+
+5. **Profile and Settings**
+   - Personal information management
+   - Notification preferences
+   - Data privacy controls
+   - App customization options
+   - Support and feedback channels
+
+6. **Subscription Screen**
+   - Clear presentation of free trial limitations
+   - Compelling visualization of premium benefits
+   - Monthly and annual subscription options
+   - Seamless payment processing flow
+   - Subscription management options
+   - Restore purchases functionality
+
+### MagicMCP Implementation
+
+The UI is built using MagicMCP for consistent and high-quality components:
+
+1. **Component Library**
+   - Custom score visualizers
+   - Food entry cards
+   - Calendar components
+   - Analysis result displays
+   - Interactive educational elements
+
+2. **Animation and Interaction**
+   - Subtle micro-interactions for engagement
+   - Smooth transitions between screens
+   - Feedback animations for actions
+   - Progress indicators for processing
+
+3. **Responsive Design**
+   - Adaptive layouts for different screen sizes
+   - Orientation support (portrait and landscape)
+   - Consistent experience across iOS and Android
+   - Accessibility considerations for all users
+
+## Implementation Guidelines and Future Roadmap
+
+### Development Phases
+
+1. **Phase 1: Core Functionality (Months 1-3)**
+   - Expo project setup and configuration
+   - Onboarding flow implementation
+   - Food scanning and AI analysis integration
+   - Heart health scoring system implementation
+   - Basic calendar tracking
+   - Subscription model and in-app purchase implementation
+
+2. **Phase 2: Enhanced Features (Months 4-6)**
+   - Advanced analytics and trends
+   - Personalized recommendations
+   - Expanded food database
+   - Performance optimizations
+
+3. **Phase 3: Extended Ecosystem (Months 7-12)**
+   - Wearable device integration
+   - Healthcare provider sharing options
+   - Community features and challenges
+   - Machine learning enhancements
+
+### Key Performance Indicators
+
+The following metrics will be tracked to evaluate app success:
+
+1. **User Engagement**
+   - Daily active users (DAU)
+   - Food scans per user per week
+   - Time spent in app
+   - Feature utilization rates
+
+2. **Health Impact**
+   - Average heart health score improvement over time
+   - Consistency of food logging
+   - Behavioral changes based on recommendations
+   - User-reported health outcomes
+
+3. **Technical Performance**
+   - App stability and crash rates
+   - API response times
+   - Image analysis accuracy
+   - Battery and resource usage
+
+### Maintenance Considerations
+
+1. **Regular Updates**
+   - Quarterly updates to heart health scoring system based on new research
+   - Monthly app updates for features and fixes
+   - Weekly backend maintenance and optimization
+
+2. **Scalability Planning**
+   - Database performance monitoring
+   - API usage tracking and quota management
+   - User growth accommodation strategies
+   - Server-side processing optimization
+
+3. **Content Freshness**
+   - Regular updates to educational materials
+   - Expansion of food recognition capabilities
+   - New recommendation algorithms
+   - Seasonal challenges and content
+
+## Conclusion
+
+HeartHealthAI represents a significant advancement in personal heart health management through its combination of AI-powered food analysis, evidence-based scoring, and user-friendly tracking. By making heart-healthy eating more accessible and understandable, the app aims to contribute to reducing cardiovascular disease risk factors and improving overall population health.
+
+The implementation plan outlined in this document provides a comprehensive roadmap for development, launch, and continuous improvement of the HeartHealthAI application, ensuring that it remains at the forefront of mobile health technology while delivering meaningful value to users. 

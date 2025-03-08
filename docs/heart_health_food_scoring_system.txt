@@ -1,0 +1,212 @@
+# Heart Health Food Scoring System
+## Medical Documentation Based on American Heart Association and Mayo Clinic Guidelines
+
+This document outlines a comprehensive, evidence-based scoring system to evaluate the heart health impact of foods on a scale of 1-10, with higher scores indicating foods that are better for heart health.
+
+## Overview
+
+The Heart Health Food Scoring System evaluates foods based on seven key factors that impact cardiovascular health, according to research from the American Heart Association, Mayo Clinic, and other reputable medical sources. Each food receives an overall score (1-10) based on weighted subscores in these critical areas.
+
+## Subscores (1-10 scale, 10 being optimal for heart health)
+
+### 1. Unhealthy Fat Score (15% of overall score)
+Evaluates the saturated and trans fat content, with focus on limiting these fats which raise LDL cholesterol.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | No saturated fat, no trans fat |
+| 9 | Very minimal saturated fat (<5% DV), no trans fat |
+| 8 | Low saturated fat (5-10% DV), no trans fat |
+| 7 | Moderate saturated fat (10-15% DV), no trans fat |
+| 6 | Higher saturated fat (15-20% DV), no trans fat |
+| 5 | High saturated fat (20-25% DV), no trans fat |
+| 4 | Very high saturated fat (25-30% DV), no trans fat |
+| 3 | Extremely high saturated fat (>30% DV), no trans fat |
+| 2 | Contains small amounts of trans fat (<0.5g) |
+| 1 | Contains significant trans fat (≥0.5g) |
+
+Medical basis: The American Heart Association recommends limiting saturated fat to less than 10% of daily calories and eliminating trans fats entirely.
+
+### 2. Healthy Fat Score (10% of overall score)
+Evaluates the presence of beneficial fats that support heart health.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | Exceptional source of heart-healthy fats (e.g., high omega-3s, olive oil) |
+| 9 | Excellent source of heart-healthy fats |
+| 8 | Very good source of heart-healthy fats |
+| 7 | Good source of heart-healthy fats |
+| 6 | Moderate amount of heart-healthy fats |
+| 5 | Contains some heart-healthy fats |
+| 4 | Limited heart-healthy fats |
+| 3 | Very limited heart-healthy fats |
+| 2 | Minimal heart-healthy fats |
+| 1 | No heart-healthy fats |
+
+Medical basis: The American Heart Association recommends including sources of omega-3 fatty acids and replacing saturated fats with healthier monounsaturated and polyunsaturated fats.
+
+### 3. Sodium Content Score (10% of overall score)
+Evaluates the sodium content, with focus on limiting sodium intake for blood pressure management.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | Very low sodium (<5% DV per serving) |
+| 9 | Low sodium (5-10% DV per serving) |
+| 8 | Moderately low sodium (10-15% DV per serving) |
+| 7 | Moderate sodium (15-20% DV per serving) |
+| 6 | Moderately high sodium (20-25% DV per serving) |
+| 5 | High sodium (25-30% DV per serving) |
+| 4 | Very high sodium (30-40% DV per serving) |
+| 3 | Extremely high sodium (40-50% DV per serving) |
+| 2 | Excessive sodium (50-75% DV per serving) |
+| 1 | Dangerously high sodium (>75% DV per serving) |
+
+Medical basis: The American Heart Association recommends limiting sodium to no more than 2,300mg per day, with an ideal limit of 1,500mg for most adults.
+
+### 4. Fiber Content Score (15% of overall score)
+Evaluates the dietary fiber content, which helps lower cholesterol and supports cardiovascular health.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | Extremely high fiber (>50% DV per serving) |
+| 9 | Very high fiber (40-50% DV per serving) |
+| 8 | High fiber (30-40% DV per serving) |
+| 7 | Good fiber content (20-30% DV per serving) |
+| 6 | Moderate fiber content (15-20% DV per serving) |
+| 5 | Some fiber content (10-15% DV per serving) |
+| 4 | Low fiber content (5-10% DV per serving) |
+| 3 | Very low fiber content (1-5% DV per serving) |
+| 2 | Minimal fiber (<1% DV per serving) |
+| 1 | No fiber |
+
+Medical basis: Medical guidelines recommend 25-30g of fiber daily for heart health benefits.
+
+### 5. Nutrient Density Score (20% of overall score)
+Evaluates the presence of heart-beneficial nutrients including antioxidants, potassium, magnesium, and other cardioprotective compounds.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | Exceptional source of multiple heart-healthy nutrients |
+| 9 | Excellent source of several heart-healthy nutrients |
+| 8 | Very good source of heart-healthy nutrients |
+| 7 | Good source of some heart-healthy nutrients |
+| 6 | Moderate source of heart-healthy nutrients |
+| 5 | Contains some beneficial nutrients but not significant amounts |
+| 4 | Limited nutritional value for heart health |
+| 3 | Very limited nutritional value for heart health |
+| 2 | Minimal nutritional value for heart health |
+| 1 | No beneficial nutrients for heart health |
+
+Medical basis: Research supports the cardioprotective effects of nutrients like potassium, magnesium, calcium, vitamin D, B vitamins, antioxidants, polyphenols, and plant sterols.
+
+### 6. Processing Level Score (10% of overall score)
+Evaluates how processed the food is, recognizing that less processing typically correlates with better heart health outcomes.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | Whole, unprocessed food in natural state |
+| 9 | Minimally processed (washing, cutting, simple preserving techniques) |
+| 8 | Basic processing that maintains nutritional integrity |
+| 7 | Moderate processing with minimal additives |
+| 6 | More processing but still recognizable as original food |
+| 5 | Moderately processed (many packaged foods, fortified products) |
+| 4 | Highly processed but without harmful additives |
+| 3 | Highly processed with some additives or preservatives |
+| 2 | Ultra-processed food with multiple additives |
+| 1 | Ultra-processed with numerous additives and artificial ingredients |
+
+Medical basis: Research shows associations between highly processed foods and increased cardiovascular disease risk. This scale is informed by the NOVA food classification system.
+
+### 7. Sugar Content Score (10% of overall score)
+Evaluates added sugar content, which contributes to inflammation and heart disease risk when consumed in excess.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | No added sugars, very low natural sugars |
+| 9 | No added sugars, contains only natural sugars in whole foods |
+| 8 | Minimal added sugars (<5% DV) |
+| 7 | Low added sugars (5-10% DV) |
+| 6 | Moderate added sugars (10-15% DV) |
+| 5 | Moderately high added sugars (15-20% DV) |
+| 4 | High added sugars (20-30% DV) |
+| 3 | Very high added sugars (30-50% DV) |
+| 2 | Extremely high added sugars (50-100% DV) |
+| 1 | Excessive added sugars (>100% DV) |
+
+Medical basis: The American Heart Association recommends limiting added sugar to no more than 6 teaspoons (24g) for women and 9 teaspoons (36g) for men daily.
+
+### 8. Additives Score (10% of overall score)
+Evaluates the presence and potential cardiovascular impact of additives, preservatives, and artificial ingredients.
+
+| Score | Criteria |
+|-------|----------|
+| 10 | No additives or preservatives |
+| 9 | Contains only natural additives with known health benefits |
+| 8 | Contains 1-2 benign additives/preservatives |
+| 7 | Contains several benign additives/preservatives |
+| 6 | Contains additives generally recognized as safe |
+| 5 | Contains some additives with mixed health evidence |
+| 4 | Contains several additives with mixed health evidence |
+| 3 | Contains additives with some negative health associations |
+| 2 | Contains multiple additives with known negative health impacts |
+| 1 | Contains additives directly linked to cardiovascular problems |
+
+Medical basis: Research from organizations like CSPI (Center for Science in the Public Interest) regarding the health impacts of various food additives.
+
+## Overall Heart Health Score Calculation
+
+The overall Heart Health Score is calculated as a weighted average of the eight subscores:
+
+Heart Health Score = (Unhealthy Fat Score × 0.15) + (Healthy Fat Score × 0.10) + (Sodium Content Score × 0.10) + (Fiber Content Score × 0.15) + (Nutrient Density Score × 0.20) + (Processing Level Score × 0.10) + (Sugar Content Score × 0.10) + (Additives Score × 0.10)
+
+## Interpretation of Overall Heart Health Score
+
+| Score Range | Interpretation |
+|-------------|---------------|
+| 9-10 | Excellent for heart health |
+| 7-8.9 | Very good for heart health |
+| 5-6.9 | Moderately good for heart health |
+| 3-4.9 | Limited heart health benefits |
+| 1-2.9 | Poor for heart health |
+
+## Application Guidelines
+
+1. Evaluate each food based on its nutritional information, ingredients list, and processing methods.
+2. Calculate subscores in all eight categories.
+3. Apply the weighted formula to determine the overall Heart Health Score.
+4. Consider the context of the overall diet, as individual foods should be evaluated as part of a complete dietary pattern.
+
+## Sample Food Evaluations
+
+### Example 1: Fresh Salmon
+- Unhealthy Fat Score: 8 (low saturated fat, no trans fat)
+- Healthy Fat Score: 10 (excellent source of omega-3 fatty acids)
+- Sodium: 9 (naturally low in sodium)
+- Fiber: 1 (no fiber)
+- Nutrient Density: 10 (excellent source of protein, B vitamins, potassium, selenium)
+- Processing Level: 10 (whole, unprocessed food)
+- Sugar: 10 (no added sugar)
+- Additives: 10 (no additives)
+- Overall Score: 8.6 (Very good for heart health)
+
+### Example 2: Packaged White Bread
+- Unhealthy Fat Score: 8 (low saturated fat, no trans fat)
+- Healthy Fat Score: 2 (minimal heart-healthy fats)
+- Sodium: 5 (moderately high sodium)
+- Fiber: 3 (low fiber content)
+- Nutrient Density: 4 (limited nutrients unless fortified)
+- Processing Level: 3 (highly processed with preservatives)
+- Sugar: 6 (moderate added sugar)
+- Additives: 5 (contains several additives)
+- Overall Score: 4.5 (Limited heart health benefits)
+
+## References
+
+1. American Heart Association. (2021). Diet and Lifestyle Recommendations.
+2. Mayo Clinic. (2022). Heart-healthy diet: 8 steps to prevent heart disease.
+3. American Heart Association. (2021). Heart-Check Food Certification Program Nutrition Requirements.
+4. Cleveland Clinic. (2021). Food Additives & Preservatives.
+5. Center for Science in the Public Interest. (2022). Chemical Cuisine Database.
+
+---
+Document developed based on current medical evidence as of 2023. Scoring system should be periodically updated as new research emerges. 
