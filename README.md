@@ -2,7 +2,7 @@
 
 A mobile application that uses AI to analyze food images for heart health, providing nutritional insights and health impact scores.
 
-Note: This is a rough draft of my HeartHealthAI app. The production code for HeartHealthAI is not in a public repo and I also use flutter instead of react native. I would not use a .env file for production code inside of a mobile app. My production code uses google cloud functions for LLM calls.
+Note: This is a rough draft of my HeartHealthAI app. The production code for HeartHealthAI is not in a public repo and I also use flutter instead of react native. I would not use a .env file for production code inside of a mobile app. My production code uses firebase as a back end and google cloud functions for LLM calls with Vertex AI.
 
 ## Features
 
